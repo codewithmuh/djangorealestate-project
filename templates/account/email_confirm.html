@@ -1,0 +1,17 @@
+{% load i18n %}
+{% load account %}
+<html lang="US">
+    <head>
+    <title>Tella</title>
+    </head>
+    <body>
+        <div>
+            <form method="post" action="{% url 'account_confirm_email' confirmation.key %}" style="margin-top: 10%;">
+                    {% csrf_token %}
+                <h3 align="center">
+                    <button type="submit" class="es-button es-button-1" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:20px;border-style:solid;border-color:#FFA73B;border-width:15px 30px;display:inline-block;background:#FFA73B;border-radius:2px;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-weight:normal;font-style:normal;line-height:24px;width:auto;text-align:center">Confirm Now </button>
+                </h3>
+            </form>
+        </div>
+    </body>
+</html>
